@@ -1,0 +1,11 @@
+Build started at 2025-05-20T22:22:49.774793
+Main binary: C:\Users\canka\Documents\multimedia_project\venv\Scripts\python.exe
+Build Options: -Dprefix=%GSTREAMER_1_0_ROOT_MSVC_X86_64%
+Python system: Windows
+The Meson build system
+Version: 1.8.0
+Source dir: C:\Users\canka\Documents\multimedia_project\gst-plugin-pylon
+Build dir: C:\Users\canka\Documents\multimedia_project\gst-plugin-pylon\build
+Build type: native build
+
+meson.build:1:0: ERROR: prefix value '%GSTREAMER_1_0_ROOT_MSVC_X86_64%' must be an absolute path

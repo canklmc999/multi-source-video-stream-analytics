@@ -1,0 +1,36 @@
+{
+    "pylon": {
+        "description": "Official GStreamer plug-in for Basler cameras",
+        "elements": {
+            "pylonsrc": {
+                "author": "Basler AG <support.europe@baslerweb.com>",
+                "description": "Source element for Basler cameras",
+                "hierarchy": [
+                    "GstPylonSrc",
+                    "GstBaseSrc",
+                    "GstElement",
+                    "GstObject",
+                    "GInitiallyUnowned",
+                    "GObject"
+                ],
+                "klass": "Source/Video/Hardware",
+                "long-name": "Basler/Pylon source element",
+                "pad-templates": {
+                    "src": {
+                        "caps": "application/unknown:\n",
+                        "direction": "src",
+                        "presence": "always"
+                    }
+                },
+                "rank": "none"
+            }
+        },
+        "filename": "gstpylon",
+        "license": "BSD",
+        "other-types": {},
+        "package": "GStreamer Pylon Plug-in",
+        "source": "gst-plugin-pylon",
+        "tracers": {},
+        "url": "https://github.com/basler/gst-plugin-pylon"
+    }
+}

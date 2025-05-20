@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+#
+# Format code with a consistent code style
+#
+
+file=$1
+
+if [ "$file" = "" ]; then
+    echo "Please specify the file to indent, run as:"
+    echo "   cpp-format <file>"
+    exit 1
+fi
+
+version=`clang-format --version 2>/dev/null`
+if test "x$version" = "x"; then
+  echo "Did not find clang-format, please install it before continuing."
+  exit 1
+else
+  CLANG_INDENT=clang-format
+fi
+
+echo "--Formatting ${file}--"
+eval ${CLANG_INDENT} -i --style=file ${file}
